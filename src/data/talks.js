@@ -5,28 +5,28 @@ export const talks = [
     journal: 'Thailand',
     year: 'March 17-21, 2025',
     // optional image for the event or your slide
-    image: 'https://via.placeholder.com/300x180?text=CSSS+2025',
+    image: 'https://media.licdn.com/dms/image/v2/D4D12AQFkYzP2hDbkzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684125378663?e=2147483647&v=beta&t=H0_BytQU5iQTiqwQK1IMIbGjPNjwbbg1WQ7KKe61FmA',
     // link: '#',
   },
   {
     title: "Finite Difference Methods for Partial Differential Equations, Graduate School of Science",
     journal: 'Royal University of Phnom Penh',
     year: 'September 2023',
-    image: 'https://via.placeholder.com/300x180?text=RUPP+2023',
+    image: 'https://media.licdn.com/dms/image/v2/D4D12AQFkYzP2hDbkzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684125378663?e=2147483647&v=beta&t=H0_BytQU5iQTiqwQK1IMIbGjPNjwbbg1WQ7KKe61FmA',
     // link: '#',
   },
   {
     title: '2D-Poisson Equation with Dirichlet Boundary Conditions',
     journal: 'Royal University of Phnom Penh',
     year: '2023',
-    image: 'https://via.placeholder.com/300x180?text=Poisson+2023',
+    image: 'https://media.licdn.com/dms/image/v2/D4D12AQFkYzP2hDbkzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684125378663?e=2147483647&v=beta&t=H0_BytQU5iQTiqwQK1IMIbGjPNjwbbg1WQ7KKe61FmA',
     // link: '#',
   },
   {
     title: 'Number Theory in RSA Cryptography system',
     journal: 'Kompot, Cambodia',
     year: 'April 2022',
-    image: 'https://via.placeholder.com/300x180?text=RSA+2022',
+    image: 'https://media.licdn.com/dms/image/v2/D4D12AQFkYzP2hDbkzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684125378663?e=2147483647&v=beta&t=H0_BytQU5iQTiqwQK1IMIbGjPNjwbbg1WQ7KKe61FmA',
     // link: '#',
   },
 ];

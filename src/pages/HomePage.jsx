@@ -26,6 +26,7 @@ const publications = [
 ];
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   const [greeting, setGreeting] = useState('');
@@ -43,7 +44,7 @@ function HomePage() {
 
   return (
     <>
-      <section className="relative min-h-[92vh] flex items-center bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500 text-white px-4 opacity-0 fade-in">
+      <section className="relative min-h-[92vh] flex items-center bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500 dark:from-indigo-800 dark:via-indigo-900 dark:to-indigo-800 text-white dark:text-white px-4 opacity-0 fade-in">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-15">
           <img
             src="/mr_photo.jpg"
@@ -57,11 +58,10 @@ function HomePage() {
             </h1>
             <p className="text-xl mb-10">Aspiring Mathematics & Electrical Engineer</p>
             <div className="space-x-4">
-              <a
-                href="#"
+              <a href='#research'
                 className="bg-white text-indigo-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
               >
-                See Projects
+                See More
               </a>
               <a
                 href="/contact"
@@ -91,14 +91,14 @@ function HomePage() {
         </a>
       </section>
 
-      <section id="research" className="py-32 bg-slate-50 text-slate-800 px-6 opacity-0 slide-up">
+      <section id="research" className="py-32 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 px-6 opacity-0 slide-up">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Research of Interest</h2>
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {researchInterests.map((r) => (
               <div
                 key={r.title}
-                className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center"
+                className="p-6 bg-white dark:bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center"
               >
                 {r.img && (
                   <img
@@ -114,12 +114,12 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="publications" className="py-16 bg-white text-slate-900 px-6 opacity-0 slide-up">
+      <section id="publications" className="py-16 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-200 px-6 opacity-0 slide-up">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">Publications</h2>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
             {publications.map((p, i) => (
-              <article key={i} className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow p-6 hover:bg-indigo-50">
+              <article key={i} className="bg-gray-50 dark:bg-slate-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow p-6 hover:bg-indigo-50 dark:hover:bg-indigo-700">
                 <p className="text-sm italic text-slate-700 mb-6 leading-relaxed">{p.citation}</p>
                 <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center text-indigo-600 font-medium hover:underline">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
@@ -139,15 +139,19 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="talk" className="py-16 bg-slate-50 text-slate-900 px-6">
+      <section id="talk" className="py-16 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-200 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-20 text-center">My Talks</h2>
+          <h2 className="text-3xl font-bold mb-20 text-center">
+            <Link to="/talks" className="hover:underline">
+              My Talks
+            </Link>
+          </h2>
           <ul className="space-y-6">
             {talks.map((talk) => (
               <li key={talk.title} className="border-l-4 border-indigo-500 pl-4">
-                <a href={talk.link} className="text-xl font-semibold hover:underline">
+                <Link to="/talks" className="text-xl font-semibold hover:underline">
                   {talk.title}
-                </a>
+                </Link>
                 <p className="text-sm text-slate-600">
                   {talk.journal} &middot; {talk.year}
                 </p>

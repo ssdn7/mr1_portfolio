@@ -30,11 +30,21 @@ function TalkPage() {
               >
                 {t.image && (
                   <div className="overflow-hidden">
-                    <img
-                      src={t.image}
-                      alt={t.title}
-                      className="w-full h-40 object-cover group-hover:scale-105 transition duration-300"
-                    />
+                    {t.link ? (
+                      <a href={t.link} target="_blank" rel="noreferrer">
+                        <img
+                          src={t.image}
+                          alt={t.title}
+                          className="w-full h-40 object-cover group-hover:scale-105 transition duration-300 cursor-pointer"
+                        />
+                      </a>
+                    ) : (
+                      <img
+                        src={t.image}
+                        alt={t.title}
+                        className="w-full h-40 object-cover group-hover:scale-105 transition duration-300"
+                      />
+                    )}
                   </div>
                 )}
 
