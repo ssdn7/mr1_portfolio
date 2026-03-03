@@ -4,7 +4,7 @@ import { talks } from '../data/talks';
 const researchInterests = [
   {
     title: 'Bilevel optimization theory and applications',
-    img: 'https://via.placeholder.com/120?text=Bilevel',
+    img: 'public/img1.jpg',
   },
   {
     title: 'Optimization modeling in energy systems',
