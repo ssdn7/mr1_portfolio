@@ -71,7 +71,7 @@ function AboutPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 + index * 0.1 }}
-                  className="border-b pb-2 border-gray-200 dark:border-gray-700"
+                  className="border-b pb-2 border-gray-200 dark:border-gray-700 tap-pop active:scale-95"
                 >
                   {item}
                 </motion.li>

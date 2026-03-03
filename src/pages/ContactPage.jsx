@@ -24,12 +24,12 @@ function ContactPage() {
   ];
 
   return (
-    <section className="min-h-[85vh] bg-gradient-to-b flex items-center justify-center dark:from-slate-900 dark:to-slate-800 px-4 py-10">
+    <section className="min-h-[85vh] bg-gradient-to-b flex items-center justify-center dark:from-slate-900 dark:to-slate-800 px-4 py-10 opacity-0 fade-in">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         
         {/* LEFT SIDE */}
         <div className="text-center lg:text-left">
-          <h1 className="text-4xl font-bold text-indigo-600 mb-4">
+          <h1 className="text-4xl font-bold text-indigo-600 mb-4 animate-slide-in">
             Get in Touch
           </h1>
 
@@ -40,16 +40,17 @@ function ContactPage() {
 
           {/* SOCIAL ICONS */}
           <div className="flex justify-center lg:justify-start gap-6 mb-8 flex-wrap">
-            {socials.map((item) => (
+            {socials.map((item, idx) => (
               <a
                 key={item.label}
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex flex-col items-center"
+                className="group flex flex-col items-center tap-pop"
+                style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div
-                  className={`${item.color} w-14 h-14 flex items-center justify-center rounded-full text-white shadow-md group-hover:shadow-xl transition duration-300`}
+                  className={`${item.color} w-14 h-14 flex items-center justify-center rounded-full text-white shadow-md group-hover:shadow-xl transition duration-300 active:scale-90`}
                 >
                   {item.icon}
                 </div>
@@ -125,7 +126,7 @@ function ContactPage() {
 
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 transition font-semibold shadow-md hover:shadow-lg"
+              className="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 transition font-semibold shadow-md hover:shadow-lg tap-pop active:scale-95"
             >
               Send Message
             </button>

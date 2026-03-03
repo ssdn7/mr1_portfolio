@@ -28,7 +28,7 @@ function Navbar() {
             <Link
               key={index}
               to={link.path}
-              className="hover:text-indigo-600 transition-colors duration-300"
+              className="hover:text-indigo-600 transition-colors duration-300 tap-pop active:scale-95"
             >
               {link.name}
             </Link>
@@ -38,7 +38,7 @@ function Navbar() {
         {/* Mobile Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-700 dark:text-gray-300 focus:outline-none"
+          className="md:hidden text-gray-700 dark:text-gray-300 focus:outline-none tap-pop active:scale-90"
         >
           {isOpen ? "✕" : "☰"}
         </button>
@@ -60,7 +60,7 @@ function Navbar() {
                   key={index}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className="hover:text-indigo-600 transition-colors duration-300"
+                  className="hover:text-indigo-600 transition-colors duration-300 tap-pop active:scale-95"
                 >
                   {link.name}
                 </Link>
