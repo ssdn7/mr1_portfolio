@@ -8,12 +8,12 @@ const researchInterests = [
   },
   {
     title: 'Optimization modeling in energy systems',
-    img: 'https://via.placeholder.com/120?text=Energy',
+    img: 'public/img1.jpg',
   },
-  { title: 'Classical optimization theory', img: 'https://via.placeholder.com/120?text=Classical' },
-  { title: 'Variational analysis', img: 'https://via.placeholder.com/120?text=Variational' },
-  { title: 'Stochastic optimization', img: 'https://via.placeholder.com/120?text=Stochastic' },
-  { title: 'Machine learning for optimization', img: 'https://via.placeholder.com/120?text=ML' },
+  { title: 'Classical optimization theory', img: 'public/img1.jpg' },
+  { title: 'Variational analysis', img: 'public/img1.jpg' },
+  { title: 'Stochastic optimization', img: 'public/img1.jpg' },
+  { title: 'Machine learning for optimization', img: 'public/img1.jpg' },
 ];
 
 const publications = [
@@ -48,7 +48,7 @@ function HomePage() {
           <img
             src="/mr_photo.jpg"
             alt="Seangleng Khe"
-            className="w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-white shadow-lg object-cover"
+            className="w-40 h-40 md:w-52 md:h-52 rounded-lg border-4 border-white shadow-lg object-cover"
           />
 
           <div className="text-center md:text-left">
@@ -104,7 +104,7 @@ function HomePage() {
                   <img
                     src={r.img}
                     alt={r.title}
-                    className="w-24 h-24 mb-4 object-cover rounded-full"
+                    className="w-full h-32 mb-4 object-cover rounded-lg border-2 border-indigo-300"
                   />
                 )}
                 <p className="text-lg font-semibold">{r.title}</p>
