@@ -68,12 +68,11 @@ function HomePage() {
               >
                 See More
               </a>
-              <a
-                href="/contact"
+              <Link to="/contact"
                 className="w-full sm:w-auto text-center border border-white px-4 py-2 rounded-full font-semibold hover:bg-white hover:text-indigo-500 hover:scale-105 hover:shadow-xl tap-pop transition-all duration-300"
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
           </div>
         </div>
