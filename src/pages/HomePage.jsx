@@ -46,7 +46,7 @@ function HomePage() {
       <section className="relative min-h-[92vh] flex items-center bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500 text-white px-4 opacity-0 fade-in">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-15">
           <img
-            src="public/mr_photo.jpg"
+            src="/mr_photo.jpg"
             alt="Seangleng Khe"
             className="w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-white shadow-lg object-cover"
           />
