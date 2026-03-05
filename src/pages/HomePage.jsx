@@ -8,12 +8,12 @@ const researchInterests = [
   },
   {
     title: 'Optimization modeling in energy systems',
-    img: '/img2.jpg',
+    img: '/img5.jpg',
   },
   { title: 'Classical optimization theory', img: '/img3.jpg' },
-  { title: 'Variational analysis', img: '/img4.jpg' },
-  { title: 'Stochastic optimization', img: '/img5.jpg' },
-  { title: 'Machine learning for optimization', img: '/img6.jpg' },
+  { title: 'Variational analysis', img: '/img6.jpg' },
+  { title: 'Stochastic optimization', img: '/img2.jpg' },
+  { title: 'Game theory', img: '/img4.jpg' },
 ];
 
 const publications = [
@@ -97,7 +97,7 @@ function HomePage() {
 
       <section id="research" className="py-32 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 px-6 opacity-0 slide-up">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Research of Interest</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">Research of Interest</h2>
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {researchInterests.map((r, idx) => (
               <div
@@ -146,7 +146,7 @@ function HomePage() {
 
       <section id="talk" className="py-16 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-200 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-20 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-20 text-center">
             <Link to="/talks" className="hover:underline">
               My Talks
             </Link>

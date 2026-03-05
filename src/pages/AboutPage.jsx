@@ -14,9 +14,9 @@ function AboutPage() {
           transition={{ duration: 0.8 }}
           className="mb-14 text-center"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
             Professional Profile
-          </h2>
+          </h1>
           <div className="w-20 h-1 bg-gray-800 dark:bg-gray-300 mx-auto mt-4 rounded-full"></div>
         </motion.div>
 

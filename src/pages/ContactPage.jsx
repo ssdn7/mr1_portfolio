@@ -16,7 +16,7 @@ function ContactPage() {
       icon: <FaTelegramPlane size={22} />,
     },
     {
-      href: "https://wa.me/yourphonenumber",
+      href: "https://wa.me/+66969138054",
       label: "WhatsApp",
       color: "bg-green-500 hover:bg-green-600",
       icon: <FaWhatsapp size={22} />,
