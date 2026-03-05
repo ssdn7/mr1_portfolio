@@ -24,12 +24,12 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-20 bg-white dark:bg-gray-900">
+    <section className="px-4 sm:px-6 lg:px-8 py-20">
       <h1 className="text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100 pt-16 fade-in">
         My Projects
       </h1>
 
-      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 sm:px-15 md:px-20">
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 sm:px-15 md:px-20  text-slate-900 dark:text-white ">
         {projects.map((project, index) => (
           <ProjectCard
             key={project.title}

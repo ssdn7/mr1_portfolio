@@ -12,7 +12,7 @@ function TalkPage() {
   return (
     <>
       {/* HERO */}
-      <section id="talk" className="relative py-24 md:py-32 flex flex-col justify-center items-center bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-600 text-white text-center px-4 opacity-0 fade-in">
+      <section id="talk" className="relative py-24 md:py-32 flex flex-col justify-center items-center bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500 dark:from-indigo-800 dark:via-indigo-900 dark:to-indigo-800 text-white text-center px-4 opacity-0 fade-in">
         <h1 className="text-4xl lg:text-5xl font-bold mb-4 animate-slide-in pt-20">
           Talks & Presentations
         </h1>

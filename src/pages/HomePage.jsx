@@ -97,7 +97,7 @@ function HomePage() {
 
       <section id="research" className="py-32 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 px-6 opacity-0 slide-up">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">Research of Interest</h2>
+          <h2 className="text-3xl lg:text-4xl hover:underline font-bold mb-8 text-center">Research of Interest</h2>
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {researchInterests.map((r, idx) => (
               <div
@@ -121,12 +121,12 @@ function HomePage() {
 
       <section id="publications" className="py-16 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-200 px-6 opacity-0 slide-up">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">Publications</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-8 hover:underline text-center">Publications</h2>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
             {publications.map((p, i) => (
-              <article key={i} className="bg-gray-50 dark:bg-slate-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 p-6 hover:bg-indigo-50 dark:hover:bg-indigo-700" style={{ animationDelay: `${i * 0.15}s` }}>
+              <article key={i} className="bg-gray-50 dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 p-6 hover:bg-indigo-50 dark:hover:bg-indigo-700">
                 <p className="text-sm italic text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">{p.citation}</p>
-                <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center text-indigo-600 font-medium hover:underline tap-pop active:scale-95">
+                <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center text-indigo-600 font-medium hover:underline tap-pop active:scale-95 hover:text-white hover:bg-indigo-600 transition-colors duration-300">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M12.293 2.293a1 1 0 011.414 0L18 6.586a2 2 0 010 2.828l-8 8a2 2 0 01-2.828 0l-4-4a2 2 0 010-2.828l4-4a1 1 0 011.414 1.414L6.414 10H11a1 1 0 010 2H5a1 1 0 01-1-1V5a1 1 0 012 0v4.586l6.293-6.293z" />
                   </svg>

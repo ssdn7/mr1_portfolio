@@ -12,7 +12,7 @@ import ContactPage from "./pages/ContactPage";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen text-gray-900 dark:text-white bg-white dark:bg-gray-900">
+      <div className="flex flex-col min-h-screen text-gray-900 dark:text-white bg-white dark:bg-slate-900">
         <Navbar />
 
         <main className="flex-grow">

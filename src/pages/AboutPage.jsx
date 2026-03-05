@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function AboutPage() {
   return (
     
-    <section className="min-h-[60vh] bg-gray-50 dark:bg-black px-6 sm:px-10 lg:px-20 py-16 overflow-hidden">
+    <section className="min-h-[60vh] bg-gray-50 dark:bg-slate-900 px-6 sm:px-10 lg:px-20 py-16 overflow-hidden">
       <div className="max-w-6xl mx-auto pt-20">
 
         {/* Header */}
