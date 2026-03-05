@@ -1,39 +1,48 @@
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from '../components/ProjectCard';
 
 const projects = [
   {
-    title: "Optimization in Power Networks",
-    description: "Combined mathematical optimization techniques with electrical grid analysis to improve load balancing and efficiency.",
-    tech: "Matlab, Python",
-    link: "#"
+    title: 'Stochastic Optimization with Metropolitan Electricity Authority (MEA), Bangkok, Thailand',
+    list: [
+      'Optimal Transformer Maintenance Scheduling Under Uncertain Power Demand',
+      'Optimal Demand Response Design',
+      'Optimal Management of a Smart Grid',
+      'Capacity Expansion Under Uncertainty',
+    ],
+    tech: 'Feb, 2026',
+    link: '#',
   },
   {
-    title: "Mathematical Modeling of Demand Response",
-    description: "Formulated and solved optimization problems for demand-side management in energy systems using linear and bilevel models.",
-    tech: "GAMS, AMPL",
-    link: "#"
+    title: 'Elliptic PDEs in Numerical Simulation with Agence Universitaire de la francophonie',
+    list: [
+      'Solve Elliptic PDEs using FEM, FDM',
+    ],
+    tech: 'March, 2023',
+    link: '#',
   },
-  {
-    title: "Stochastic Analysis for Renewable Integration",
-    description: "Applied probability and stochastic calculus to assess the impact of renewables on electrical network stability.",
-    tech: "Python, R",
-    link: "#"
-  }
 ];
 
-function ProjectsPage() {
+function Projects() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 opacity-0 fade-in">
-      <h2 className="text-3xl font-bold mb-8 text-center animate-slide-in">
-        Projects
+    <section className="px-4 sm:px-6 lg:px-8 py-20 bg-white dark:bg-gray-900">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100 pt-16 fade-in">
+        My Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 px-20">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} className="tap-pop" />
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            list={project.list}
+            tech={project.tech}
+            link={project.link}
+            delay={index * 0.1} // staggered fade-in
+          />
         ))}
       </div>
     </section>
   );
 }
 
-export default ProjectsPage;
+export default Projects;

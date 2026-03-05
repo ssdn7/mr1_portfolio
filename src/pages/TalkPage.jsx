@@ -4,11 +4,15 @@ import { talks } from '../data/talks';
 
 
 function TalkPage() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); // Scroll to top when this page loads
+  // }, []);
+
   return (
     <>
       {/* HERO */}
-      <section className="relative py-24 md:py-32 flex flex-col justify-center items-center bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-600 text-white text-center px-4 opacity-0 fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-slide-in">
+      <section id="talk" className="relative py-24 md:py-32 flex flex-col justify-center items-center bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-600 text-white text-center px-4 opacity-0 fade-in">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-slide-in pt-20">
           Talks & Presentations
         </h1>
         <p className="text-lg md:text-xl max-w-2xl animate-fade-in" style={{ animationDelay: '0.3s' }}>

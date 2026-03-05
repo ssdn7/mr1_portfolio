@@ -25,7 +25,7 @@ function ContactPage() {
 
   return (
     <section className="min-h-[85vh] bg-gradient-to-b flex items-center justify-center dark:from-slate-900 dark:to-slate-800 px-4 py-10 opacity-0 fade-in">
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center pt-20">
         
         {/* LEFT SIDE */}
         <div className="text-center lg:text-left">

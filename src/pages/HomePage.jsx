@@ -8,12 +8,12 @@ const researchInterests = [
   },
   {
     title: 'Optimization modeling in energy systems',
-    img: '/img1.jpg',
+    img: '/img2.jpg',
   },
-  { title: 'Classical optimization theory', img: '/img1.jpg' },
-  { title: 'Variational analysis', img: '/img1.jpg' },
-  { title: 'Stochastic optimization', img: '/img1.jpg' },
-  { title: 'Machine learning for optimization', img: '/img1.jpg' },
+  { title: 'Classical optimization theory', img: '/img3.jpg' },
+  { title: 'Variational analysis', img: '/img4.jpg' },
+  { title: 'Stochastic optimization', img: '/img5.jpg' },
+  { title: 'Machine learning for optimization', img: '/img6.jpg' },
 ];
 
 const publications = [
@@ -44,7 +44,7 @@ function HomePage() {
 
   return (
     <>
-      <section className="relative min-h-[92vh] flex items-center bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500 dark:from-indigo-800 dark:via-indigo-900 dark:to-indigo-800 text-white dark:text-white px-4 opacity-0 fade-in overflow-hidden">
+      <section className="relative min-h-screen pt-20 flex items-center bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500 dark:from-indigo-800 dark:via-indigo-900 dark:to-indigo-800 text-white dark:text-white px-4 opacity-0 fade-in overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full mix-blend-screen animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-40 h-40 bg-white rounded-full mix-blend-screen animate-pulse" style={{ animationDelay: '0.5s' }}></div>
@@ -109,7 +109,7 @@ function HomePage() {
                   <img
                     src={r.img}
                     alt={r.title}
-                    className="w-full h-32 mb-4 object-cover rounded-lg border-2 border-indigo-300 hover:border-indigo-500 transition-colors duration-300"
+                    className="w-full h-32 mb-4 object-cover rounded-lg border-2 border-gray-300 hover:border-blue-500 transition-colors duration-300"
                   />
                 )}
                 <p className="text-lg font-semibold text-slate-800 dark:text-white">{r.title}</p>
